@@ -1,0 +1,22 @@
+{
+  "name": "hmq-client",
+  "version": "0.0.2",
+  "description": "hmq is a library that makes network communication via JSON Queue System This is client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.hakunamatata.in:node/hmq-client.git"
+  },
+  "keywords": [
+    "queue",
+    "task"
+  ],
+  "author": "sathish",
+  "license": "ISC",
+  "dependencies": {
+    "shortid": "^2.2.6"
+  }
+}
