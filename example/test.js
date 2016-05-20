@@ -5,7 +5,8 @@
 let createSpeaker = require('../');
 
 
-var client = createSpeaker({scope: 'OL', hosts: [8001, 8000]});
+var client = createSpeaker({scope: 'OL', hosts: [ "188.166.214.83:8000"]});
+//var client = createSpeaker({scope: 'OL', hosts: [8000]});
 
 var i = 0;
 setInterval(function () {
@@ -16,10 +17,10 @@ setInterval(function () {
         console.log("final", err, data)
     });
 
-}, 100);
+}, 1000);
 
 client.on('came', function (data, callback) {    //   m.reply(data)
     setTimeout(function () {
-        callback(null, data)
-    }, 100)
+        callback(data)
+    }, 1000)
 });
